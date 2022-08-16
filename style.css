@@ -3,7 +3,6 @@
 }
 body {
     margin: 0;
-    padding: 0;
     background-color: aquamarine;
 }
 main {
@@ -33,7 +32,6 @@ section {
 .bloc {
     background-color: aqua;
     writing-mode: vertical-lr;
-    text-orientation: mixed;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -44,3 +42,36 @@ section {
     font-weight: bold;
     font-size: 1.5rem;
 }
+.active {
+    background-color: rgb(127, 204, 255);
+}
+.active p {
+    color: blue;
+}
+#btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn {
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    .bloc {
+       height: 150px;
+    }
+    .bloc p {
+        font-size: 0.7rem;
+    }
+}
+    
